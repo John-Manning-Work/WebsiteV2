@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-image: url("/WebsiteV2/image/background.jpg");
+  background-repeat: no-repeat;
+  background-size: 65cm 35cm;
+  padding: 20px;
+  text-align: right;
+}
+header nav a {
+  padding: 10px 30px;
+  font-size: 2rem;
+  color: #e0ffff;
+  border-radius: 5px;
+  letter-spacing: 0.5px;
+}
+header nav a:hover,
+header nav a.active {
+  background: #00c2cb;
+  color: #42455a;
+  transition: 0.5s ease-out;
+  letter-spacing: 2px;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(2) {
+  color: white;
+  background-image: url('/WebsiteV2/image/background.jpg');
+  background-repeat: no-repeat;
+  background-size: 65cm 35cm;
+  
+}
+section:nth-child(3) {
+  color: blue;
+  background-color: yellow
+}
+section:nth-child(4) {
+  color: white;
+  background: blueviolet;
+}
+
+section .title_main h1{
+  font-size: 5.5rem;
+  color: black;
+  font-family: Clicker Script;
+  
+}
+
+section .title_main h2 {
+  font-size: 3.5rem;
+  color: black;
+  font-family: Clicker Script;
+  justify-content: center;
+  display: flex;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
