@@ -11,22 +11,25 @@
         <!-- Include CSS Style Sheet For Customization -->
         <link rel="stylesheet" href="styles.css"/>
 
-        <!-- FontAwesome -->
-
-        <!-- Font Weights -->
+        <!-- GoogleFont -->
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
-        </style>
+          @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+      </style>
+        <!-- Font Weights -->
+        
     </head>
 
 <body>
+    <!-- Creating Navigation bar -->
     <header>
         <nav>
           <a href="#home" class="active">Home</a>
+          <a href="#aboutme">About Me</a>
           <a href="#projects">Projects</a>
-          <a href="#services">Services</a>
         </nav>
     </header>
+
+      <!-- Creating Navigation sections -->
       <section id="home">
         <div class="title_main">
             <h1>Hello, I'm John</h1>
@@ -34,15 +37,110 @@
         </div>
       </section>
 
-      <section id="projects">
-        <h1>Hello</h1>
+      <section id="aboutme">
+        <div class="container reveal">
+        <div class="text-container">
+          <div class="titleclass">
+            <h1>About Me</h1>
+          </div>
+          <div class="about-me">
+            <h2>A Little Information</h2>
+            <p>
+              I've had an interest in the IT industry specifically development from a young age. I'm looking to persue a career in development now that i have graduated from university with a BSc in computer game design.
+              Most of my work throughout university was based on solo projects. This had a great range from modelling to programming.
+              This is when my passion grew. I enjoyed creating something from nothing & my goal is to find a junior role that will allow me to continously develop my skills.
+            </p>
+            <p>
+              If you check out my Projects section you can see some of my latest work that i have developed in my spare time.
+              My projects are something i found interesting and wanted to have fun trying to make. Some are very basic whilst others took a bit more time. Feel free to follow my github link to view all of projects in one place.
+            </p>
+            <p>
+              Outside of my work life i have plenty of interests and hobbies. I enjoy reading and studying random interests, some of my previous interests have been 3D modelling, web design, software testing & currently i have been reading a lot into marine biology & tend to switch subjects every couple of months. Aside from this i enjoy long walks with my labrador Marley, swimming, basketball, video games & most of all binge watching Netflix series.
+            </p>
+            <h2>Work Experience</h2>
+            <h3>Network Communication System LTD (June 2021&#8594;Current)</h3>
+            <p>
+              My time with NCS i have worked with software. More specifially software testing. Currently i am working on a new door entry & warden call system.
+              Some features of the software are SIP calling, RTSP camera streaming, Tablet to tablet video streaming, MQTT server based on a raspberry pi & privacy options.
+              When APKS are sent on a daily basis I fully test the software to find any new bugs that have occured. I am then tasked with creating detailed bug reports to send to developers to meet customer requirements.
+              During this time i have also had exposure to Linux and MQTT servers via a raspberry pi. This allows users to send pre-defined messages via local network to all tenants in case of emergency.
+            </p>
+            <h3>QA Consulting (July 2019&#8594;March 2020)</h3>
+            <p>
+              During my time at QA Consulting i worked as both a Data Scientist & a Devops Engineer.
+              My first project was to create an application that would take in user input.
+              With the knowledge i gained throughout my training with QA I created a UI that would take specific data about a house. The data would go through a linear model which would create a predicted price for that house.
+              The project used SQL as a database. Which has testing data saved to it. This was then linked and sourced into R studio where the application models were created. Once the application was complete I deploted it using GCP which would allow me to access from anywhere at any time. All files were then stored on Github for accessability and cloned into the GCP instance. 
+            </p>
+            <p>
+              My second project was to set up a web app using CI integration using Microsoft Azure.
+              This involved using Jenkins.
+              With the knowledge i gained throughout my time with QA. Once the application was complete all files were stored on Github. I followed this up by setting up an instance in Azure with Jenkins to set up a CI pipeline. When the github files are updated this instantly pulls the new data updating the website. 
+            </p>
+          </div>
+          <div class="text-box">
+            <h3>Education</h3>
+            <p>
+              &bull;BSc Honor - Computer Game Design & Technology (2:2)
+            </p>
+            <p>&nbsp;Liverpool John Moores University</p>
+          </div>
+          <div class="text-box">
+            <h3>Education</h3>
+            <p>
+              f
+              
+            
+            </p>
+          </div>
+        </div>
+        </div>
       </section>
     
-      <section id="services">
-        <h1>Hello</h1>
+      <section id="projects">
+        <div class="container reveal">
+          <div class="project-title">
+            <h1>Projects</h1>
+          </div>
+          
+        <div class="projects__container">
+          <div class="projects__card">
+            <h2>Enter Project</h2>
+            <p>Project Description</p>
+            <button>View Project</button>
+          </div>
+          <div class="projects__card">
+            <h2>Enter Project</h2>
+            <p>Project Description</p>
+            <button>View Project</button>
+          </div>
+          <div class="projects__card">
+            <h2>Enter Project</h2>
+            <p>Project Description</p>
+            <button>View Project</button>
+          </div>
+        
+          <div class="projects__container">
+            <div class="projects__card">
+              <h2>Enter Project</h2>
+              <p>Project Description</p>
+              <button>View Project</button>
+            </div>
+            <div class="projects__card">
+              <h2>Enter Project</h2>
+              <p>Project Description</p>
+              <button>View Project</button>
+            </div>
+            <div class="projects__card">
+              <h2>Enter Project</h2>
+              <p>Project Description</p>
+              <button>View Project</button>
+            </div>
+          </div>
+        </div>
       </section>
 
-
+      <!-- Icluding JS Script -->
       <script src="app.js"></script>
 </body>
 </html>

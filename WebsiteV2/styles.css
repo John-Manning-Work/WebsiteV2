@@ -52,18 +52,20 @@ section:nth-child(2) {
   
 }
 section:nth-child(3) {
-  color: blue;
-  background-color: yellow
+  color: black;
+  background: blue;
 }
 section:nth-child(4) {
-  color: white;
-  background: blueviolet;
+  color: black;
+  background: white;
 }
 
 section .title_main h1{
   font-size: 5.5rem;
   color: black;
   font-family: Clicker Script;
+  text-align: center;
+  position: relative;
   
 }
 
@@ -71,8 +73,200 @@ section .title_main h2 {
   font-size: 3.5rem;
   color: black;
   font-family: Clicker Script;
-  justify-content: center;
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+}
+
+section .text-container h1 {
+  font-size: 4rem;
+  text-align: center;
+  padding: 10rem;
+  font-family: Clicker Script;
+  margin-top: -5rem;
+  margin-bottom: -150px;
+}
+
+section text-container {
+  margin: 100px;
+  
+}
+
+section .text-container .about-me {
+  background-color: aquamarine;
+  width: 135rem;
+  height: 59rem;
+  border-radius: 30px;
+  margin-left: 3px;
+  margin-bottom: 20px;
+  
+}
+
+section .text-container .titleclass h1{
+  margin-left: 35%;
+  width: 30%;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 10px;
+  padding: 30px 30px;
+  text-decoration: underline;
+  
+
+}
+
+section .text-container .about-me h2{
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 50px;
+  font-family: Clicker Script;
+  text-decoration: underline; 
+  
+}
+
+section .text-container .about-me h3 {
+  font-size: 2.5rem;
+  margin-left: 50px;
+  font-family: Clicker Script;
+  text-decoration: underline;
+  
+
+}
+
+section .text-container .about-me p {
+  margin-top: 10px;
+  font-size: 1.4rem;
+  text-align: left;
+  margin-left: 50px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+
+section .text-container .text-box {
+  float: left;
+  margin: 100px 20px;
+  padding: 10rem 10rem;
+  background: skyblue;
+  width: 40%;
+  height: 50rem;
+  text-align: left;
+  border-radius: 30px;
+  font-size: 2rem;
+  margin-left: 150px;
+  margin-top: 0px;
+  
+}
+
+section .text-container .text-box h3 {
+  font-size: 2.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-top: -100px;
+  margin-left: -50px;
+}
+
+section .text-container .text-box p {
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  margin-left: -50px;
+}
+
+section .project-title h1 {
+  margin-left: 35%;
+  width: 30%;
+  border-radius: 1rem;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: -100px;
+  padding: 30px 30px;
+  font-family: Clicker Script;
+  font-size: 4rem;
+  text-decoration: underline;
+}
+span{
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: translateY(300px);
+  display: inline-table;
+}
+
+span.fade {
+  opacity: 1;
+  transform: translateY(0px);
+  font-size: 5rem;
+  margin-top: 0.1rem;
+}
+
+.projects__container {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.projects__card {
+  margin: 1rem;
+  height: 450px;
+  width: 600px;
+  border-radius: 4px;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.6) 100%
+    ),
+    url('/images/pic2.jpg');
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  margin-top: 5.5rem;
+}
+
+.projects__card:before {
+  opacity: 0.2;
+}
+
+.projects__card:nth-child(2) {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(17, 17, 17, 0.9) 100%
+    ),
+    url('/images/pic3.jpg');
+}
+
+.projects__card h2 {
+  position: absolute;
+  top: 300px;
+  left: 30px;
+}
+
+.projects__card p {
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
+
+.projects__card button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #f77062;
+  position: absolute;
+  top: 380px;
+  left: 30px;
+  font-size: 1rem;
+}
+
+.projects__card button:hover {
+  cursor: pointer;
+}
+
+.projects__card:hover {
+  transform: scale(1.075);
+  transition: 0.2s ease-in;
 }
 
 .reveal {
