@@ -15,6 +15,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
+  height: 5rem;
   z-index: 1000;
   background-image: url("/WebsiteV2/image/background.jpg");
   background-repeat: no-repeat;
@@ -37,6 +38,54 @@ header nav a.active {
   letter-spacing: 2px;
 }
 
+header nav div {
+  width: 1000px;
+  margin-top: -43.5px;
+}
+
+header nav h1 {
+  font-size: 3rem;
+  font-family: "Asap", sans-serif;
+}
+
+header nav #change {
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+header nav #flip {
+  height: 50px;
+  overflow:hidden;
+}
+
+header nav #flip > div > div {
+  color:black;
+  padding: -15px 12px;
+  height:45px;
+  margin-bottom: 90px;
+  display:inline-block;
+  text-align: left;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 3rem;
+  margin-left: 14rem;
+}
+
+header nav #flip div:first-child {
+  animation: show 5s linear infinite;
+}
+
+@keyframes show {
+  0% {margin-top:-270px;}
+  5% {margin-top:-180px;}
+  33% {margin-top:-180px;}
+  38% {margin-top:-90px;}
+  66% {margin-top:-90px;}
+  71% {margin-top:0px;}
+  99.99% {margin-top:0px;}
+  100% {margin-top:-280px;}
+
+}
+
 section {
   min-height: 100vh;
   display: flex;
@@ -53,7 +102,7 @@ section:nth-child(2) {
 }
 section:nth-child(3) {
   color: black;
-  background: blue;
+  background: white;
 }
 section:nth-child(4) {
   color: black;
@@ -78,6 +127,17 @@ section .title_main h2 {
   margin-top: -10px;
 }
 
+section .title_main h3 {
+  font-size: 2.5rem;
+  color: black;
+  font-family: Clicker Script;
+  text-align: center;
+  position: relative;
+  margin-top: -10px;
+}
+
+
+
 section .text-container h1 {
   font-size: 4rem;
   text-align: center;
@@ -87,15 +147,19 @@ section .text-container h1 {
   margin-bottom: -150px;
 }
 
-section text-container {
+section .text-container {
   margin: 100px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
   
 }
 
 section .text-container .about-me {
   background-color: aquamarine;
   width: 135rem;
-  height: 59rem;
+  height: 60rem;
   border-radius: 30px;
   margin-left: 3px;
   margin-bottom: 20px;
@@ -103,13 +167,12 @@ section .text-container .about-me {
 }
 
 section .text-container .titleclass h1{
-  margin-left: 35%;
-  width: 30%;
+  width: 100%;
   border-radius: 1rem;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 20px;
   margin-bottom: 10px;
-  padding: 30px 30px;
+  padding: 10px 0;
   text-decoration: underline;
   
 
@@ -142,49 +205,18 @@ section .text-container .about-me p {
   
 }
 
-section .text-container .text-box {
-  float: left;
-  margin: 100px 20px;
-  padding: 10rem 10rem;
-  background: skyblue;
-  width: 40%;
-  height: 50rem;
-  text-align: left;
-  border-radius: 30px;
-  font-size: 2rem;
-  margin-left: 150px;
-  margin-top: 0px;
-  
-}
-
-section .text-container .text-box h3 {
-  font-size: 2.5rem;
-  text-align: left;
-  text-transform: uppercase;
-  margin-bottom: 50px;
-  margin-top: -100px;
-  margin-left: -50px;
-}
-
-section .text-container .text-box p {
-  font-size: 1.5rem;
-  text-align: left;
-  text-transform: uppercase;
-  margin-left: -50px;
-}
-
-section .project-title h1 {
+/*.project-title h1 {
   margin-left: 35%;
   width: 30%;
   border-radius: 1rem;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: -100px;
   padding: 30px 30px;
   font-family: Clicker Script;
   font-size: 4rem;
   text-decoration: underline;
-}
+}*/
+
 span{
   opacity: 0;
   transition: all 0.5s ease;
@@ -197,6 +229,15 @@ span.fade {
   transform: translateY(0px);
   font-size: 5rem;
   margin-top: 0.1rem;
+}
+
+#projects {
+  background-color: aquamarine;
+  width: 135rem;
+  height: 40rem;
+  border-radius: 30px;
+  margin-left: 110px;
+  margin-bottom: 20px;
 }
 
 .projects__container {
@@ -279,4 +320,18 @@ span.fade {
 .reveal.active {
   transform: translateY(0);
   opacity: 1;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 10px;
+  margin-inline-start: 48%;
+  
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
